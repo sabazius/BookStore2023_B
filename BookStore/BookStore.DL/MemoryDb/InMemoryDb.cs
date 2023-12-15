@@ -1,4 +1,5 @@
-﻿using BookStore.Models.Models.Users;
+﻿using BookStore.Models.Models;
+using BookStore.Models.Models.Users;
 
 namespace BookStore.DL.MemoryDb
 {
@@ -24,6 +25,26 @@ namespace BookStore.DL.MemoryDb
                     Id = 3,
                     Name = "Name 3",
                     BirthDay = DateTime.Now
+                },
+            };
+
+        public static List<Book> BookData
+            = new List<Book>()
+            {
+                new Book()
+                {
+                    Id = 1,
+                  Title = "Book 1"
+                },
+                new Book()
+                {
+                    Id = 2,
+                    Title = "Book 2"
+                },
+                new Book()
+                {
+                    Id = 3,
+                  Title = "Book 3"
                 },
             };
     }
