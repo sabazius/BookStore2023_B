@@ -25,5 +25,17 @@ namespace BookStore.Controllers
         {
             return _authorService.GetById(id);
         }
+
+        [HttpPost]
+        public void Add([FromBody]Author author)
+        {
+            _authorService.Add(author);
+        }
+
+        [HttpDelete]
+        public void DeleteById(int id)
+        {
+            _authorService.Remove(id);
+        }
     }
 }
