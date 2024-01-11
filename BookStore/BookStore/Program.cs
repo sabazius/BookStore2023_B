@@ -16,6 +16,12 @@ namespace BookStore
                 .AddSingleton<IBookRepository, BookRepository>();
             builder.Services
                 .AddSingleton<IBookService, BookService>();
+            builder.Services
+                .AddSingleton<IAuthorRepository, AuthorRepository>();
+            builder.Services
+                .AddSingleton<IAuthorService, AuthorService>();
+            builder.Services
+                .AddSingleton<ILibraryService, LibraryService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
